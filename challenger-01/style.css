@@ -1,0 +1,100 @@
+main {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 30px 0;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: solid 1px black;
+}
+
+.frame {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 10px 0px rgba(0,0,0,0.3);
+    background: #43389F; /*para navegadores que não suporte gradients*/
+                    /* (|direção para onde vai| % de cor sem gradient| % de cor com grandient|)*/
+    background: linear-gradient(to top right, #43389F 10%, #4ec6ca 100%);
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    color: #FFF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.number {
+    position: relative;
+    height: 100px;
+    width: 200px;
+}
+
+.one-first {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: -16px;
+    height: 40px;
+    width: 20px;
+    background: #FFF;
+    border-radius: 3px;
+    transform: rotate(50deg);
+    box-shadow: 0 0 13px 0 rgba(0,0,0,0.2);
+}
+
+.one-secound {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0px;
+    height: 100px;
+    width: 24px;
+    background-color: #FFF;
+    border-radius: 3px;
+    box-shadow: 0 0 13px 0 rgba(0,0,0,0.5);  
+}
+
+.zero-first,
+.zero-secound {
+    position: absolute;
+    z-index: 8;
+    top: 0;
+    left: 17px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    border: 24px solid #FFF;
+    box-shadow: 0 0 13px 0 rgba(0,0,0,0.5);
+}
+
+.zero-secound {
+    z-index: 6;
+    left: 100px;
+}
+
+.days {
+    font-size: 5rem;
+    font-weight: 900;
+    margin-top: -10px;
+}
+
+.text {
+    margin-top: -20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+}
