@@ -10,12 +10,6 @@
     min-height: 100vh;
 }
 
-.content{
-    flex-grow: 2;
-    text-align: center;
-    padding: 25px;
-}
-
 .header-primary, .footer-primary {
     padding: 25px;
     color: white;
@@ -27,10 +21,76 @@
 }
 
 .footer-primary {
+    margin-top: 20px;
     background: linear-gradient(to bottom left, #43389F 20%, #4ec6ca 100%);  
 }
 
 .title-footer {
     font-size: 1.4rem;
 }
+
+.content{
+    flex-grow: 2;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding: 25px;
+}
+
+.list {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 10px;
+}
+
+.item{
+    position: relative;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 150px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: absolute;
+}
+
+.item:hover .thumbnail {
+    width: 150px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.397);
+    position: absolute;
+}
+
+.item:hover .item-title{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 900;
+
+}
+
+.item img {
+    width: 150px;
+    height: 150px;
+}
+
+.item-title{
+    font-size: 1.3rem;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-weight: 900;
+
+}
+
 
